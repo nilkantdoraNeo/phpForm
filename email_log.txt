@@ -40,3 +40,24 @@ X-Mailer: PHP/8.2.12
 ------------------------
 [2025-11-07 12:19:08] ✅ EMAIL SENT SUCCESSFULLY TO: nilkant678@gmail.com
 [2025-11-07 12:19:08] ✅ Successfully processed event 20: weret
+[2025-11-07 12:43:48] ATTEMPTING TO SEND EMAIL:
+To: nilkant678@gmail.com
+Subject: Feedback Form for: new
+Headers: MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+From: Feedback System <nilkantdora@gmail.com>
+Reply-To: nilkantdora@gmail.com
+X-Mailer: PHP/8.2.12
+------------------------
+[2025-11-07 12:43:54] ✅ EMAIL SENT SUCCESSFULLY TO: nilkant678@gmail.com
+[2025-11-07 12:43:54] ATTEMPTING TO SEND EMAIL:
+To: parvati42000@gmail.com
+Subject: Feedback Form for: new
+Headers: MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+From: Feedback System <nilkantdora@gmail.com>
+Reply-To: nilkantdora@gmail.com
+X-Mailer: PHP/8.2.12
+------------------------
+[2025-11-07 12:44:00] ✅ EMAIL SENT SUCCESSFULLY TO: parvati42000@gmail.com
+[2025-11-07 12:44:00] ✅ Successfully processed event 21: new

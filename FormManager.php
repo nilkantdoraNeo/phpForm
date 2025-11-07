@@ -228,5 +228,29 @@ class FormManager {
         $sql = "DELETE FROM forms WHERE id = $form_id";
         return $conn->query($sql);
     }
+
+    public function getFormsForUser($email) {
+        $conn = $this->db->getConnection();
+        $email = $this->db->escape($email);
+        
+        // Get forms assigned to the user through events
+        $sql = "SELECT DISTINCT f.*, e.title as event_title, e.end_time,
+                CASE WHEN fr.id IS NOT NULL THEN 1 ELSE 0 END as submitted
+                FROM forms f
+                JOIN events e ON f.id = e.form_id
+                JOIN event_attendees ea ON e.id = ea.event_id
+                LEFT JOIN form_responses fr ON (f.id = fr.form_id AND fr.email = '$email')
+                WHERE ea.email = '$email'
+                ORDER BY e.end_time DESC";
+        
+        $result = $conn->query($sql);
+        
+        $forms = [];
+        while ($row = $result->fetch_assoc()) {
+            $forms[] = $row;
+        }
+        
+        return $forms;
+    }
 }
 ?>

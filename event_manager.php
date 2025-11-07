@@ -104,17 +104,28 @@ $forms = $formManager->getAllForms();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Manager - Feedback System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin-nav.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>📅 Event & Seminar Manager</h1>
-            <p>Schedule automated feedback form distribution</p>
-            <div style="margin-top: var(--space-lg);">
-                <a href="admin.php" class="btn">
-                    <span>⬅️</span> Back to Forms
+            <h1>✨ Admin Dashboard</h1>
+            <p>Manage your feedback system</p>
+            
+            <nav class="admin-nav">
+                <a href="admin.php" class="admin-nav-link">
+                    <span>📝</span> Forms
                 </a>
-            </div>
+                <a href="event_manager.php" class="admin-nav-link active">
+                    <span>📅</span> Events
+                </a>
+                <a href="process_events.php" class="admin-nav-link" title="Process Pending Events">
+                    <span>⚡</span> Process Events
+                </a>
+                <a href="logout.php" class="admin-nav-link" style="margin-left: auto;">
+                    <span>🚪</span> Logout
+                </a>
+            </nav>
         </div>
 
         <?php if ($message): ?>

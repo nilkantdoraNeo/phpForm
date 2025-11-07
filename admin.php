@@ -65,6 +65,7 @@ $forms = $formManager->getAllForms();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Feedback System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin-nav.css">
     <style>
         .success-animation {
             animation: successPulse 0.6s ease-in-out;
@@ -98,8 +99,23 @@ $forms = $formManager->getAllForms();
 <body>
     <div class="container">
         <div class="header">
-            <h1>✨ Feedback Form Builder</h1>
-            <p>Create and manage beautiful custom feedback forms</p>
+            <h1>✨ Admin Dashboard</h1>
+            <p>Manage your feedback system</p>
+            
+            <nav class="admin-nav">
+                <a href="admin.php" class="admin-nav-link <?php echo !isset($_GET['page']) ? 'active' : ''; ?>">
+                    <span>📝</span> Forms
+                </a>
+                <a href="event_manager.php" class="admin-nav-link <?php echo isset($_GET['page']) && $_GET['page'] === 'events' ? 'active' : ''; ?>">
+                    <span>📅</span> Events
+                </a>
+                <a href="process_events.php" class="admin-nav-link" title="Process Pending Events">
+                    <span>⚡</span> Process Events
+                </a>
+                <a href="logout.php" class="admin-nav-link" style="margin-left: auto;">
+                    <span>🚪</span> Logout
+                </a>
+            </nav>
         </div>
 
         <?php if ($message): ?>
