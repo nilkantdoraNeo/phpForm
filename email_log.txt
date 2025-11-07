@@ -1,0 +1,42 @@
+[2025-11-07 11:26:26] ATTEMPTING TO SEND EMAIL:
+To: nilkantdora@gmail.com
+Subject: Test Real Email from Feedback System
+Headers: MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+From: Feedback System <nilkantdora@gmail.com>
+Reply-To: nilkantdora@gmail.com
+X-Mailer: PHP/8.2.12
+------------------------
+[2025-11-07 11:26:33] ✅ EMAIL SENT SUCCESSFULLY TO: nilkantdora@gmail.com
+[2025-11-07 12:03:32] ATTEMPTING TO SEND EMAIL:
+To: nilkant678@gmail.com
+Subject: Feedback Form for: transient
+Headers: MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+From: Feedback System <nilkantdora@gmail.com>
+Reply-To: nilkantdora@gmail.com
+X-Mailer: PHP/8.2.12
+------------------------
+[2025-11-07 12:03:39] ✅ EMAIL SENT SUCCESSFULLY TO: nilkant678@gmail.com
+[2025-11-07 12:03:39] ✅ Successfully processed event 19: transient
+[2025-11-07 12:12:23] ATTEMPTING TO SEND EMAIL:
+To: nilkantdora@gmail.com
+Subject: Test Email from Feedback System
+Headers: MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+From: Feedback System <nilkantdora@gmail.com>
+Reply-To: nilkantdora@gmail.com
+X-Mailer: PHP/8.2.12
+------------------------
+[2025-11-07 12:12:29] ✅ EMAIL SENT SUCCESSFULLY TO: nilkantdora@gmail.com
+[2025-11-07 12:19:02] ATTEMPTING TO SEND EMAIL:
+To: nilkant678@gmail.com
+Subject: Feedback Form for: weret
+Headers: MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+From: Feedback System <nilkantdora@gmail.com>
+Reply-To: nilkantdora@gmail.com
+X-Mailer: PHP/8.2.12
+------------------------
+[2025-11-07 12:19:08] ✅ EMAIL SENT SUCCESSFULLY TO: nilkant678@gmail.com
+[2025-11-07 12:19:08] ✅ Successfully processed event 20: weret
